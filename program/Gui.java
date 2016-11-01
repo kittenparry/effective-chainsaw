@@ -21,10 +21,10 @@ public class Gui extends JFrame{
 		super("Log Recorder");
 		setLayout(new FlowLayout());
 		
-		item1 = new JLabel("Directory:");
-		txt1 = new JTextField("C:\\", 33);
+		item1 = new JLabel("Home/");
+		txt1 = new JTextField("Dropbox", 33);
 		item2 = new JLabel("Filename:");
-		txt3 = new JTextField("someFile");
+		txt3 = new JTextField("myLogs");
 		item3 = new JLabel("Entry:");
 		txt2 = new JTextField(18);
 		butt4 = new JButton("Enter");
