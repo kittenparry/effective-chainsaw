@@ -50,6 +50,11 @@ public class Gui extends JFrame{
 		rad1.addItemListener(tim);
 		rad1.hide();
 		rad1.doClick();
+		addWindowListener(new WindowAdapter() {
+			public void windowOpened(WindowEvent e) {
+				txt2.requestFocus();
+			}
+		});
 	}
 	private class dandy implements ActionListener{
 		public void actionPerformed(ActionEvent ev){
