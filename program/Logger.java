@@ -15,7 +15,7 @@ public class Logger {
 		g.setVisible(true);
 	}
 	public void logEntry(String dir, String name, String txt){
-		try(PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(dir + "\\" + name + ".txt", true)))) {
+		try(PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(dir + "/" + name + ".txt", true)))) {
 			error = false;
 			out.println(createTime() + "| " + txt);
 		}catch (IOException e) {
