@@ -14,7 +14,7 @@ import java.awt.event.WindowEvent;
 public class Gui extends JFrame{
     private Logger topper = new Logger();
     private Locales str = new Locales();
-    private JLabel item1, item2, item3, msg, time;
+    private JLabel msg, time;
     private JButton butt4;
     private JTextField txt1, txt2, txt3;
     private int x = 1;
@@ -25,26 +25,18 @@ public class Gui extends JFrame{
         setLayout(new FlowLayout());
         str.Strings();
         setTitle(str.super_label);
-        item1 = new JLabel(str.dir);
         //Enter the default directory to save .txt file here
         //Sub folders can be used directly
         //eg. "Users\\Public" if the program is located at C:\
         txt1 = new JTextField("C:\\Users\\Public", 33);
-        item2 = new JLabel(str.file);
         //File name for the log file here
         txt2 = new JTextField("someFile");
-        item3 = new JLabel(str.entry);
-        txt3 = new JTextField(18);
+        txt3 = new JTextField(22);
         butt4 = new JButton(str.button);
         msg = new JLabel("");
         time = new JLabel("");
         rad1 = new JRadioButton("", false);
 
-        add(item1);
-        add(txt1);
-        add(item2);
-        add(txt2);
-        add(item3);
         add(txt3);
         add(butt4);
         add(time);
