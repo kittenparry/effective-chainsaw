@@ -32,7 +32,7 @@ public class Gui extends JFrame{
         txt1 = new JTextField("C:\\Users\\Public", 33);
         item2 = new JLabel(str.file);
         //File name for the log file here
-        txt2 = new JTextField("someFile");
+        txt2 = new JTextField("someFile", 4);
         item3 = new JLabel(str.entry);
         txt3 = new JTextField(18);
         butt4 = new JButton(str.button);
